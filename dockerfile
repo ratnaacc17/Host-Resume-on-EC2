@@ -1,4 +1,4 @@
 FROM php:7.2-apache
-COPY . /var/www/html/
+copy index.html /usr/share/nginx/html/index.html
 EXPOSE 80
 CMD ["apachectl", "-D", "FOREGROUND"]
